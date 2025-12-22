@@ -1,0 +1,320 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body 
+{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: #f5f5f5;
+    padding: 20px;
+}
+
+.container 
+{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h1 
+{
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.alert 
+{
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.alert-success 
+{
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.card 
+{
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.card-gradient 
+{
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.card-gradient h2 
+{
+    margin-bottom: 15px;
+    color: white;
+}
+
+.card-gradient p 
+{
+    margin-bottom: 10px;
+    opacity: 0.9;
+}
+
+.key-grid 
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 10px;
+}
+
+.btn-white 
+{
+    background: white;
+    color: #667eea;
+    font-weight: 600;
+}
+
+.settings-table 
+{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.settings-table th,
+.settings-table td 
+{
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.settings-table th 
+{
+    background: #f8f9fa;
+    font-weight: 600;
+    color: #333;
+}
+
+.settings-table tr:hover 
+{
+    background: #f8f9fa;
+}
+
+.settings-table tr.hidden 
+{
+    display: none;
+}
+
+.provider-badge 
+{
+    background: #667eea;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.value-code 
+{
+    background: #f3f4f6;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.text-center 
+{
+    text-align: center;
+}
+
+.text-muted 
+{
+    color: #999;
+}
+
+.form-group 
+{
+    margin-bottom: 20px;
+}
+
+label 
+{
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+}
+
+input[type="text"],
+textarea 
+{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+input[readonly] 
+{
+    background: #f3f4f6;
+}
+
+textarea 
+{
+    min-height: 80px;
+    resize: vertical;
+}
+
+.btn 
+{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.btn-primary 
+{
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.btn-primary:hover 
+{
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.btn-danger 
+{
+    background: #dc3545;
+    color: white;
+}
+
+.btn-danger:hover 
+{
+    background: #c82333;
+}
+
+.btn-edit 
+{
+    background: #28a745;
+    color: white;
+    padding: 6px 12px;
+    font-size: 12px;
+}
+
+.btn-edit:hover 
+{
+    background: #218838;
+}
+
+.btn-small 
+{
+    padding: 6px 12px;
+    font-size: 12px;
+}
+
+.btn-secondary 
+{
+    background: #0d6efd;
+    color: white;
+}
+
+.btn-secondary:hover 
+{
+    background: #0b5ed7;
+}
+
+.mt-20 
+{
+    margin-top: 20px;
+}
+
+.mb-20 
+{
+    margin-bottom: 20px;
+}
+
+.actions 
+{
+    display: flex;
+    gap: 10px;
+}
+
+.inline-form 
+{
+    display: inline;
+}
+
+.back-link 
+{
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.back-link:hover 
+{
+    text-decoration: underline;
+}
+
+.modal 
+{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.modal.active 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content 
+{
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 500px;
+    width: 90%;
+}
+
+.modal-header 
+{
+    margin-bottom: 20px;
+}
+
+.modal-header h2 
+{
+    color: #333;
+}
+
+.close-modal 
+{
+    float: right;
+    font-size: 24px;
+    cursor: pointer;
+    color: #999;
+}
+
+.close-modal:hover 
+{
+    color: #333;
+}
