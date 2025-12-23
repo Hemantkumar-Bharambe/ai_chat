@@ -10,10 +10,10 @@ Route::get('/', [ChatController::class, 'index']);
 Route::post('/generate', [ChatController::class, 'generate'])->name('generate');
 Route::get('/get-current-model', [ChatController::class, 'getCurrentModel'])->name('get-current-model');
 
-// Settings Management Routes
+
 Route::get('/settings', [SettingController::class, 'index'])->name('settings.index');
 Route::post('/settings', [SettingController::class, 'store'])->name('settings.store');
 Route::post('/settings/update', [SettingController::class, 'update'])->name('settings.update');
 Route::delete('/settings/{id}', [SettingController::class, 'destroy'])->name('settings.destroy');
-// Test Groq API key (server-side)
+
 Route::post('/settings/test-groq-key', [SettingController::class, 'testGroqKey'])->name('settings.testGroqKey');
