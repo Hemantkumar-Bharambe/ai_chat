@@ -95,9 +95,11 @@ class ChatController extends Controller
    
     private function getGroqApiKeys(): array
     {
+        // Use model accessors to ensure decrypted values are returned
         $keys = Setting::where('key', 'LIKE', 'GROQ_API_KEY%')
             ->orderBy('key')
-            ->pluck('value')
+            ->get()
+            ->map(function ($s) { return $s->value; })
             ->filter()
             ->values()
             ->toArray();
