@@ -41,7 +41,7 @@
                 </button>
                 <button class="btn btn-white" 
                     onclick="quickAddDynamicGroq()">
-                    Add Next Groq Key
+                    +Add Next Groq Key
                 </button>
             </div>
         </div>
